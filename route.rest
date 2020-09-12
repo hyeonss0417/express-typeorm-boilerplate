@@ -1,0 +1,55 @@
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "url": "ww.naver.com/",
+    "accessKey": ""
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "url": "://www.google.co.kr/"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "url": "https://www.naver.com/"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "url": "https://www.naver.com",
+    "accessKey": ""
+}
+
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "url": "https://www.naver.com",
+    "accessKey": "naver"
+}
+###
+GET http://localhost:3000/status
+
+###
+GET http://localhost:3000/urls
+
+###
+GET http://localhost:3000/naver
+
+###
+GET http://localhost:3000/naver/stat
+
+
