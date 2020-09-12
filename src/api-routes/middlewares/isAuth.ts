@@ -1,5 +1,5 @@
-import jwt from "express-jwt";
 import { Request } from "express";
+import * as jwt from "express-jwt";
 import config from "../../config";
 
 /**
@@ -21,10 +21,11 @@ const getTokenFromHeader = (req: Request) => {
   return null;
 };
 
-const isAuth = jwt({
+const isAuth: jwt.RequestHandler = jwt({
   secret: config.jwtSecret, // The _secret_ to sign the JWTs
   userProperty: "token", // Use req.token to store the JWT
   getToken: getTokenFromHeader, //How to extract the JWT from the request
+  algorithms: ["RS256"],
 });
 
 export default isAuth;

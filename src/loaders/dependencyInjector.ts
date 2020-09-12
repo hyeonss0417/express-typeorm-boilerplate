@@ -1,6 +1,6 @@
 import LoggerInstance from "./logger";
 import Container from "typedi";
-import mailgun from "mailgun-js";
+import * as mailgun from "mailgun-js";
 import config from "../config";
 
 export default ({
