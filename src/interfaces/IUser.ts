@@ -6,4 +6,4 @@ export interface IUserInputDTO {
   password: string;
 }
 
-export type IUserDTO = Omit<User, "password" | "salt">;
+export type IUserViewDTO = Omit<User, "password" | "salt">;
